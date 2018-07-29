@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Portfólio - Thalita</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Audiowide|Kanit" rel="stylesheet">  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        // Script para rolamento suave das âncoras do menu
+        $(document).ready(function(){
+            $('.nav a[href^="#"]').on('click', function(event) {        //Seleciona link do nav
+                if (this.hash !== "") {                                 //Verifica se link Default
+                    event.preventDefault();                             //Previne link Default
+                    var hash = this.hash;                               //Guarda hash (valor da âncora)
+                    $('html, body').animate({                           //Animate do jQuery para scroll suave
+                        scrollTop: $(hash).offset().top
+                    }, 700, function(){                                 //Valor em milisegundos
+                    //window.location.hash = hash;                      //Adiciona a hash para a URL
+                    });
+                } // End if
+             });
+        });
+    </script>
+
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/bootstrap.js"></script>
+    
+
+    <!-- Inicio:  -->
+    <div class="container-fluid">                                               <!-- divInicio -->
+    
+    <!-- Navegação -->
+
+    <div class ="row" id="topo">                                                <!-- div01topo -->
+    <nav class="navbar navbar-default navegacao navbar-fixed-top">
+    <div class="navbar-header">                                                 <!-- div02topo -->
+    <!-- O trecho abaixo cria um botão lateral para menu, usado em dispositivos mobile -->
+      <button type="button" class="navbar-toggle collapsed botao-menu" data-toggle="collapse" data-target="#menuprincipal"><span class="sr-only">Navegar</span><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+    <!-- Fim do trecho para botão menu mobile -->
+    </div>                                                                      <!-- /div02topo -->
+    
+    <div class="collapse navbar-collapse" id="menuprincipal">                   <!-- div03topo -->
+    <ul class="nav navbar-nav menu">
+    <li><a  href="#topo"><span class="glyphicon glyphicon-home"></span></a></li>
+    <li><a  href="#infos">Sobre</a></li>
+    <li><a  href="#trabs">Trabalhos</a></li>
+    <li><a  href="#contato">Contato</a></li>
+    </ul>
+    </div>                                                                      <!-- /div03topo -->
+    </nav>
+    </div>                                                                      <!-- /div01topo -->
+    <!-- Fim Navegação -->
+
+    <!-- Página 1 -->
+    <div class="row home">                                                      <!-- div01home -->
+    <div class="col-sm-12">                                                     <!-- div02home -->
+   <!-- <img id="avatar" src="img/avatar01.png" alt="Avatar">-->
+    <h1 class="titulo-home">Meu Portfólio</h1>
+    </div>                                                                      <!-- /div02home -->
+    </div>                                                                      <!-- /div01home -->
+    <!-- Fim Página 1 -->
+    
+    <!-- Página 2 -->
+    <div class="row" id="infos">                                                <!-- div01info -->
+    <div class="col-sm-8 base-coluna">                                          <!-- div02info -->
+        <h2 class="titulo-info"> Quem sou eu? </h2>
+        <p class="texto-info"> Meu nome é Thalita Alves Pereira, tenho 25 anos e atualmente resido em Bauru, interior de São Paulo. Sou recém formada em Ciência da Computação pela UNESP e estou me dedicando a aprimorar minhas habilidades para a área de programação para Web, focando em desenvolvimento de <i>front end</i> mas não se limitando a esse assunto. Minha principal meta atual é ingressar no mercado de trabalho e, após conseguir, construir uma carreira sólida. Para isso tenho me dedicado cada vez mais a estudar e aplicar meus conhecimentos, como por exemplo na construção deste website.</p>
+
+        <h2 class="titulo-info"> Minhas habilidades: </h2>
+        <p class="texto-info"> Apresento uma lista de minhas habilidades, sendo atualizada conforme meu progresso:</p> 
+
+        <!-- Início área de habilidades -->
+        <ul style="float: left;">
+            <li class="item-prog"><p class="texto-progress" style="color: #00cc00;">HTML</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color:#00cc00;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00e600;">CSS</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #00e600;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00ff00;">Bootstrap</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #00ff00;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00ff55;">SASS</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="20"
+            aria-valuemin="0" aria-valuemax="100" style="width:20%; background-color: #00ff55;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color: #4dff88;">Javascript</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="40"
+            aria-valuemin="0" aria-valuemax="100" style="width:40%; background-color:#4dff88;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00ff99;">PHP</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="40"
+            aria-valuemin="0" aria-valuemax="100" style="width:40%; background-color: #00ff99;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00e68a;">Typescript</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="30"
+            aria-valuemin="0" aria-valuemax="100" style="width:30%; background-color:#00e68a;">
+            </div></div></li>
+        </ul>
+        <ul style="display: inline-block; float: left;">
+            <li class="item-prog"><p class="texto-progress" style="color:#00cc00;">AngularJS</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="30"
+            aria-valuemin="0" aria-valuemax="100" style="width:30%; background-color: #00cc00;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00e600;">C</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color:#00e600;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00ff00;">Dreamweaver</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color:#00ff00;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00ff55;">Animate</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color:#00ff55;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#4dff88;">Wordpress</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="20"
+            aria-valuemin="0" aria-valuemax="100" style="width:20%; background-color:#4dff88;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00ff99;">MS Office</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="40"
+            aria-valuemin="0" aria-valuemax="100" style="width:40%; background-color:#00ff99;">
+            </div></div></li>
+
+            <li class="item-prog"><p class="texto-progress" style="color:#00e68a;">Photoshop</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100" style="width:10%; background-color:#00e68a;">
+            </div></div></li>
+        </ul> 
+        <!-- Fim área de habilidades -->
+    </div>                                                                      <!-- /div02info -->
+    </div>                                                                      <!-- /div01info -->
+    
+    <!-- Fim Página 2 -->
+    
+    <!-- Página 3 -->
+    <div class="row" id="trabs">                                                <!-- div01trabs --> 
+    <div class="col-sm-8 base-coluna">                                          <!-- div02trabs -->
+       <h2 class="titulo-info">Meus trabalhos e projetos </h2>
+        <!-- Inserir projetos em containeres -->
+       <div class="row base-projeto">                                           <!-- div03trabs -->
+            <img class="miniatura-trabs" src="img/tcc-mini.png" alt="TCC Website">
+            <h3 class="titulo-trabs">Website para ensinar programação através de jogos (TCC)</h3>
+            <p class="infos-trabs"> O projeto consiste em um website feito com base no framework Bootstrap, usando como principais linguagens HTML, CSS, Javascript e PHP. O mini jogo presente no site como Tutorial apresenta conceitos básicos de algorítmos, importantes como base de qualquer linguagem de programação. Além das linguagens citadas e do Bootstrap também foi usado no projeto os programas Dreamweaver, Animate e MySQL.<br><br>
+            Para ver o código completo no Github<a href="https://github.com/thalitaap/TCC-2017"> clique aqui</a> !</p> -->
+       </div>                                                                   <!-- /div03trabs -->
+        <div class="row base-projeto">                                          <!-- div04trabs -->
+           <img class="miniatura-trabs" src="img/portfolio-mini.png" alt="Portfolio">
+            <h3 class="titulo-trabs">Website portfólio </h3>
+            <p class="infos-trabs"> Desenvolvido como forma de aplicar meus conhecimentos e me promover de maneira mais efetiva, este website conta um pouco sobre a minha pessoa sendo atualizado conforme vou progredindo em minhas habilidades. </p>
+        </div>                                                                  <!-- /div04trabs -->
+    </div>                                                                      <!-- /div02trabs -->
+    </div>                                                                      <!-- /div01trabs -->
+    
+    <!-- Fim Página 3 -->
+    
+    <!-- Página 4 -->
+    <footer class="row" id="contato">
+        <h2 class="titulo-info">Contato</h2>
+        <div class="redes-sociais" style="float: left;">                        <!-- div01sociais -->
+            <p><img src="img/sociais/linkedin.png" alt="Linkedin"><a href="https://www.linkedin.com/in/thalita-alves-pereira-52425714b/"> /thalita-alves-pereira-52425714b </a></p>
+            <p><img src="img/sociais/facebook.png" alt="Facebook"><a href="https://www.facebook.com/thalita.ap"> /thalita.ap </a></p>
+        </div>                                                                  <!-- /div01sociais -->
+
+        <div class="redes-sociais" style="display: inline-block; float: left;"> <!-- div02sociais -->
+            <p><img src="img/sociais/whats.png" alt="Whatsapp"> +55 (14)98208-8722 </p>
+            <p><img src="img/sociais/email.png" alt="E-mail"> tha123ap@gmail.com </p>
+        </div>                                                                 <!-- /div02sociais -->
+        <div class="col-sm-6" style="float: right;">
+            <p class="creditos"> Website desenvolvido por Thalita Alves Pereira - 2018</p>
+            <p class="creditos-mini">Ícones sociais por <a href="https://www.iconfinder.com/rebininfotech">Rebin Infotech</a> - Wallpaper por <a href="https://wallpaper.wiki/author/billion-photos/">Billion Photos</a></p>
+        </div>
+    </footer>
+    
+    <!-- Fim Página 4 -->
+    
+    </div>                                                                      <!-- /divInicio -->
+    <!-- Fim  -->
+  </body>
+</html>
